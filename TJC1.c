@@ -1,21 +1,24 @@
+//  Input time in hour and minute and display angle found by a analogue clock two hand. //
 #include <stdio.h>
-int main() {
-int Hour, Minute, Hour_angle, Minute_angle, diff_btwn_two_hand ;
-    printf("Enter Hour (0-12): ");
-    scanf("%d", & Hour);
+int main () {
+    int x , y , d , n , m;
+    printf("Enter time in hour: ");
+    scanf("%d",&x);
+    printf("Enter time in minute: ");
+    scanf("%d",&y);
 
-    printf("Enter Minute (0-59): ");
-    scanf("%d", & Minute);
- Hour_angle =(Hour*30) + (Minute*0.5);
+d = x*30+(y*0.5);
+n=y*6;
 
- Minute_angle =(Minute*6);
-diff_btwn_two_hand = (Hour_angle - Minute_angle);
-
- printf("Hour Angle: %d\n" ,Hour_angle);
- printf("Minute Angle: %d\n",Minute_angle);
-printf("Difference Between two hands: %d\n",diff_btwn_two_hand);
+if ( d > n )
+{ m = d - n;}
+else { m = n -d ;}
 
 
+printf("The angle for Hour is : %d\n",d);
+printf("The angle for minute is : %d\n",n);
+printf("Difference between two angle: %d\n",m);
 
-return 0;
+
+    return 0;
 }
