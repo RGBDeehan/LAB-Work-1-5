@@ -1,3 +1,5 @@
+// C-05 : Input a three digit number and display each digit separately. //
+
 #include <stdio.h>
 int main() {
 int x , hundreds , tens , ones ;    
