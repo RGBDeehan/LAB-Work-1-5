@@ -1,3 +1,5 @@
+// C-03 : Input distance travel in(fractional kilometre) and waiting time (min) in a taxi if fare per kilometre is 25 taka (rounded kilometre) and waiting charge is 5 Taka (per min) then display bill . //
+
 #include <stdio.h>
 int main() {
 float x,y,z;
